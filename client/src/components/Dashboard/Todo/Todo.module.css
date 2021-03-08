@@ -1,0 +1,46 @@
+.contaier {
+  opacity: 0;
+  animation: transitionIn 0.4s ease-out forwards;
+  line-height: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.details_field h4 {
+  text-transform: capitalize;
+  color: #043f77ad;
+  font-weight: bolder;
+}
+
+.details_field p {
+  font-weight: normal;
+}
+
+.details_field small {
+  font-weight: bold;
+  color: #097a4baf;
+}
+
+.btns_field {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btns_field button,
+.btns_field a {
+  color: hsla(0, 0%, 0%, 0.678);
+  margin: 0 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btns_field button:hover,
+.btns_field a:hover {
+  color: #043f77ad;
+}
+
+@keyframes transitionIn {
+  100% {
+    opacity: 1;
+  }
+}

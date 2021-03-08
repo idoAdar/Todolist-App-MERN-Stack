@@ -1,0 +1,130 @@
+.container {
+  background-color: #eee;
+  width: 40%;
+  height: 55vh;
+  margin: auto;
+  box-shadow: 2px 3px 4px #ccc;
+  border-radius: 5px;
+}
+
+.wrapper {
+  margin: auto;
+  width: 85%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 0rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #044077;
+}
+
+.header a {
+  color: #000000;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header a:hover {
+  color: #044077;
+}
+
+.container hr {
+  margin: 1rem;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.input_field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 8vh;
+}
+
+.input_field input {
+  border: 1px solid #044077;
+  padding: 0.7rem;
+  border-radius: 5px;
+  outline: none;
+}
+
+.input_field input:focus,
+.input_area textarea:focus {
+  border: 2px solid #043f77ad;
+  background-color: #eeeeee;
+}
+
+.input_area {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 15vh;
+}
+
+.input_area textarea {
+  height: 95%;
+  border: 1px solid #044077;
+  padding: 0.7rem;
+  border-radius: 5px;
+  outline: none;
+}
+
+.btn_field {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+}
+
+.btn_field button {
+  width: 100%;
+  padding: 0.5rem 1.3rem;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #043f77ad;
+}
+
+.btn_field button:hover {
+  color: #ffff;
+  background-color: #043f77ad;
+}
+
+@media (max-width: 770px) {
+  .container {
+    width: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .header h1 {
+    font-size: 2.4rem;
+    color: #044077;
+  }
+}
